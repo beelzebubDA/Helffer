@@ -1,0 +1,122 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Hauora";
+    src: url("../fonts/Hauora-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Hauora";
+    src: url("../fonts/Hauora-Medium.otf") format("opentype"), url("../fonts/Hauora-Medium.woff") format("woff"), local("Hauora");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Hauora";
+    src: url("../fonts/Hauora-SemiBold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Hauora";
+    src: url("../fonts/Hauora-Bold.otf") format("opentype"), url("../fonts/Hauora-Bold.woff") format("woff"), local("Hauora");
+    font-weight: bold;
+    font-weight: 700;
+}
+
+/* Media */
+$tab: 1399.98px;
+$mobile: 1023.98px;
+@mixin tab {
+    @media (max-width: $tab) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+/* Resets */
+
+ul, ol, p,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #050505;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+
+    &.actived {
+        overflow: hidden;
+    }
+}
+
+.container {
+
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 40px;
+    margin-left: 0;
+    margin-right: 0;
+    --bs-gutter-x: 0;
+    margin: 0 auto;
+
+    @include tab {
+        max-width: 1024px;
+        padding: 0 20px;
+    }
+
+    @include mobile {
+        max-width: 375px;
+    }
+}
+.wrapper {
+    overflow: hidden;
+}
+section {
+    margin-bottom: 180px;
+
+    @include tab {
+        margin-bottom: 150px;
+    }
+
+    @include mobile {
+        margin-bottom: 100px;
+    }
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+
+    @include tab {
+        font-size: 55px;
+        letter-spacing: -2.75px;
+    }
+
+    @include mobile {
+        font-size: 34px;
+    }
+}
+
+.description {
+    line-height: 135%; /* 24.3px */
+    letter-spacing: -0.54px;
+    color: #858585;
+
+}
+
+a {
+    text-decoration: none;
+    color: #050505;
+}
+

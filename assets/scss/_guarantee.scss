@@ -1,0 +1,296 @@
+// how to use block
+
+.howToUse {
+    .howToUse-block {
+        .howToUse-block__T {
+
+        }
+
+        .howToUse-block__B {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column-reverse;
+            }
+
+            .howToUse-block__B-L {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                gap: 20px;
+
+                @include mobile {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                    @include tab {
+                        height: 232px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            .howToUse-block__B-R {
+                width: 670px;
+                min-width: 326px;
+
+                @include tab {
+                    width: 50%;
+                    min-height: 232px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                    height: 232px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// non-guarantee cases
+
+.nonGuarant {
+    .nonGuarant-block {
+        font-family: "Hauora";
+        .nonGuarant-block__sides {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+            margin-top: 20px;
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+            }
+            .nonGuarant-block__L {
+                width: calc(50% - 10px);
+
+                @include mobile {
+                width: 100%;
+                }
+            }
+            .nonGuarant-block__R {
+                width: calc(50% - 10px);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                @include mobile {
+                width: 100%;
+                }
+                .nonGuarant-block__R-T {
+                    .nonGuarant-block__R-item  {
+                        min-height: 200px;
+
+                        @include tab {
+                            min-height: 250px;
+                        }
+
+                        @include mobile {
+                            min-height: 200px;
+                        }
+                    }
+                }
+
+                .nonGuarant-block__R-B {
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    gap: 20px;
+
+                    @include mobile {
+                        flex-direction: column;
+                    }
+                    .nonGuarant-block__R-item  {
+                        min-height: 300px;
+                        width: calc(50% - 10px);
+
+                        @include tab {
+                            min-height: 250px;
+                        }
+
+                        @include mobile {
+                            min-height: 200px;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .nonGuarant-block__R-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    border-radius: 20px;
+                    padding: 20px;
+                    background: #F9F9F6;
+                    
+                    @include tab {
+                        padding: 20px 10px;
+                    }
+                    .nonGuarant-block__R-item__title {
+                        color: #050505;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 110%;
+                        letter-spacing: -1.5px;
+
+                        span {
+                            display: none;
+                        }
+
+                        @include tab {
+                            font-size: 27px;
+                            letter-spacing: -1.3px;
+
+                            span {
+                                display: inline;
+                            }
+                        }
+
+                        @include mobile {
+                            font-size: 25px;
+                            letter-spacing: -1.25px;
+
+                            span {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .nonGuarant-block__R-item__text {
+                        color: #858585;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 135%;
+                        letter-spacing: -0.54px;
+
+                        @include tab {
+                            span {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// non-guarantee info
+
+.nonGuarantInfo{
+    .nonGuarantInfo-block{
+        font-family: "Hauora";
+        .nonGuarantInfo-block__sides{
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            margin-top: 40px;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+            }
+            .nonGuarantInfo-block-L{
+                width: calc(50% - 10px);
+                display: flex;
+                align-items: end;
+                justify-content: end;
+
+                @include mobile {
+                    width: 100%;
+                    justify-content: start;
+                }
+            }
+            .nonGuarantInfo-block-R{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                    width: 100%;
+                }
+                .nonGuarantInfo-block-R-B{
+                    display: flex; 
+                    align-items: start;
+                    justify-content: start;
+                    gap: 20px;
+
+                    @include mobile {
+                        flex-direction: column;
+                    }
+                }
+            }
+            .nonGuarantInfo-block__item {
+                padding: 20px;
+                border-radius: 15px;
+                background: #F9F9F6;
+                width: 50%;
+                min-height: 220px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+
+                @include tab {
+                    padding: 20px 10px;
+                    min-height: 250px;
+                }
+
+                @include mobile {
+                    min-height: 200px;
+                    width: 100%;
+                }
+                &.pacifier {
+                    background: transparent;
+
+                    @include mobile {
+                        display: none;
+                    }
+                }
+                .nonGuarantInfo-block__item-numb{
+                    color: #050505;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 110%;
+                    letter-spacing: -1.5px;
+
+                    @include mobile {
+                        font-size: 25px;
+                        letter-spacing: -1.25px;
+                    }
+                }
+                .nonGuarantInfo-block__item-span{
+                    color: #050505;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 135%;
+                    letter-spacing: -0.54px;
+                }
+            }
+        }
+    }
+}

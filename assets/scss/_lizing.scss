@@ -1,0 +1,893 @@
+// lizing advantagies
+.lizingAdv {
+
+    .lizingAdv-block {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-family: "Hauora";
+
+        @include mobile {
+            gap: 30px;
+        }
+
+        .lizingAdv-block__top {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .lizingAdv-block__top-L {
+                width: calc(50% - 10px);
+
+                @include mobile {
+                width: 100%;
+            }
+            }
+
+            .lizingAdv-block__top-R {
+                width: calc(50% - 10px);
+
+                @include mobile {
+                width: 100%;
+            }
+            }
+        }
+        
+        .lizingAdv-block__bottom {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .lizingAdv-block__bottom-L {
+                width: calc(50% - 10px);
+
+                @include mobile {
+                width: 100%;
+            }
+            }
+
+            .lizingAdv-block__bottom-R {
+                width: calc(50% - 10px);
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+                gap: 30px;
+
+                @include mobile {
+                width: 100%;
+            }
+
+                .lizingAdv-block__bottom__last {
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    width: 100%;
+                }
+
+                .lizingAdv-block__bottom-item {
+                    max-width: 325px;
+
+                    @include tab {
+                        max-width: 235px;
+                    }
+
+                    @include mobile {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .lizingAdv-block__bottom-item {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                padding: 20px;
+                border-radius: 15px;
+                background: #F9F9F6;
+                min-height: 250px;
+
+                @include mobile {
+                    gap: 50px;
+                    padding: 20px 10px;
+                }
+            }
+
+            .lizingAdv-block__bottom-item__numb {
+                color: #050505;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 110%;
+                letter-spacing: -1.5px;
+
+                @include tab {
+                    font-size: 27px;
+                }
+
+                @include mobile {
+                    font-size: 25px;
+                }
+            }
+
+            .lizingAdv-block__bottom-item__text {
+                color: #050505;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 135%;
+                letter-spacing: -0.54px;
+            }
+        }
+    }
+
+
+}
+
+// procesing of buying
+
+.procBuying {
+
+    .procBuying-block {
+        font-family: "Hauora";
+
+        .procBuying-block-title{
+            color: #858585;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 135%;
+            letter-spacing: -0.54px;
+
+            @include mobile {
+                color: #050505;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #E2E2E2;
+                display: block;
+                width: 100%;
+            }
+        }
+        .procBuying-block__sides{
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+            margin-top: 20px;
+
+            @include mobile {
+                margin-top: 30px;
+            }
+
+            .procBuying-block__L {
+                width: calc(50% - 10px);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                @include mobile {
+                    display: none;
+                }
+
+                .procBuying-block__L-link{
+                    width: 49%;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    padding: 10px;
+                    background: #F5F5F5;
+                    gap: 10px;
+
+                    &.actived {
+                        background: #050505;
+                        .link {
+                            &-numb{
+                                color: #fff;
+                            }
+                            &-text{
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .link {
+                        &-numb{
+                            color: #858585;
+                            font-size: 11px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 135%;
+                            letter-spacing: -0.33px;
+                        }
+                        &-text{
+                            color: #858585;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%;
+                            letter-spacing: -0.72px;
+
+                            @include tab {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+            .procBuying-block__R{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                }
+
+                .procBuying-block__R-item {
+                    display: none;
+                    flex-direction: column;
+
+                    &.actived {
+                        display: flex;
+                    }
+
+                    @include mobile {
+                        display: flex;
+                    }
+
+                    .procBuying-block__R-item__title{
+                        color: #050505;
+                        font-size: 60px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 110%;
+                        letter-spacing: -3px;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+
+                        @include tab {
+                            font-size: 55px;
+                            margin-bottom: 10px;
+                        }
+
+                        @include mobile {
+                            font-size: 36px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .procBuying-block__R-item__text{
+                        color: #858585;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 135%;
+                        letter-spacing: -0.54px;
+                        margin-bottom: 40px;
+
+                        @include tab {
+                            margin-bottom: 30px;
+                        }
+
+                        @include mobile {
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .procBuying-block__R-item__img{
+                        border-radius: 15px;
+                        object-fit: cover;
+
+                        @include tab {
+                            height: 251px;
+                            object-fit: fill;
+                        }
+
+                        @include mobile {
+                            height: 175px;
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
+// financy programms
+
+.financyProgs{
+
+    .financyProgs-block {
+        font-family: "Hauora";
+        .financyProgs-block__T{
+            display: flex;
+            justify-content: start;
+            margin-bottom: 74px;
+
+            @include tab {
+                margin-bottom: 20px;
+            }
+
+            @include mobile {
+                flex-direction: column;
+            }
+            .financyProgs-block__T-L{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+            .financyProgs-block__T-R {
+                width: calc(50% - 10px);
+                display: flex;
+                align-items: end;
+                justify-content: end;
+
+                @include mobile {
+                    width: 100%;
+                    justify-content: start;
+                }
+                .financyProgs-block__T-R-descr{
+                    color: #858585;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 135%;
+                    letter-spacing: -0.33px;
+                    width: 50%;
+
+                    @include tab {
+                        font-size: 12px;
+                        letter-spacing: -0.36px;
+
+                        br {
+                            display: none;
+                        }
+                    }
+
+                    @include mobile {
+                        width: 100%;
+                        margin: 20px 0 20px 0;
+                    }
+                }
+            }
+        }
+        .financyProgs-block__B{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @include mobile {
+                gap: 20px;
+            }
+            .financyProgs-block__B-items{
+                display: flex;
+                gap: 20px;
+
+                @include mobile {
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .financyProgs-block__B-items__R {
+                    width: calc(50% - 10px);
+
+                    @include mobile {
+                    width: 100%;
+                }
+                }
+                .financyProgs-block__B-items__L {
+                    width: calc(50% - 10px);
+
+                    @include mobile {
+                    width: 100%;
+                }
+                    &.scnd {
+                        display: flex;
+                        justify-content: end;
+
+                        @include tab {
+                            justify-content: start;
+                        }
+                    }
+                }
+            }
+            .financyProgs-block__B-item-big{
+                padding: 20px;
+                border-radius: 20px;
+                background: #F9F9F6;
+                width: 100%;
+                min-height: 280px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+
+                @include tab {
+                    min-height: 250px;
+                }
+
+                .financyProgs-block__B-item__top {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+            .financyProgs-block__B-item__numb{
+                color: #050505;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 135%;
+                letter-spacing: -0.33px;
+
+                @include tab {
+                    font-size: 12px;
+                }
+            }
+            .financyProgs-block__B-item__info{
+                color: #050505;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 110%;
+                letter-spacing: -1.5px;
+
+                @include tab {
+                    font-size: 27px;
+                    letter-spacing: -1.35px;
+                }
+
+                @include mobile {
+                    font-size: 25px;
+                    letter-spacing: -1.25px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            .financyProgs-block__B-item__list{
+                list-style: none;
+                color: #858585;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 135%;
+                letter-spacing: -0.54px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: relative;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #858585;
+                    border-radius: 50%;
+                }
+            }
+            .financyProgs-block__B-item{
+                padding: 20px;
+                border-radius: 20px;
+                background: #F9F9F6;
+                max-width: 325px;
+                min-height: 280px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+
+                @include tab {
+                    max-width: 100%;
+                    width: 100%;
+                    min-height: 250px;
+                }
+
+                @include mobile {
+                    min-height: 280px;
+                    padding: 20px 10px;
+                }
+
+                nav {
+                    padding: 0 10px;
+                }
+
+                .financyProgs-block__B-item__top {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+// lizing options
+
+.lizingOpt{
+    .lizingOpt-block {
+        font-family: "Hauora";
+        .lizingOpt-block__T {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+            }
+            .lizingOpt-block__T-L {
+                width: calc(50% - 10px);
+
+                @include mobile {
+                width: 100%;
+            }
+                .lizingOpt-block__T-L__span{
+                    color: #858585;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 135%;
+                    letter-spacing: -0.54px;
+                    display: flex;
+                    align-items: end;
+                    gap: 20px;
+
+                    @include mobile {
+                        display: block;
+                        width: 100%;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #E2E2E2;
+
+                        &::after {
+                            display: none !important;
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 87%;
+                        height: 1px;
+                        background-color: #E2E2E2;
+                    }
+                }
+            }
+            .lizingOpt-block__T-R {
+                width: calc(50% - 10px);
+                margin-top: 12px;
+
+                @include mobile {
+                width: 100%;
+            }
+                .lizingOpt-block__T-R__info{
+                    color: #050505;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 110%;
+                    letter-spacing: -1.5px;
+                    margin-bottom: 20px;
+
+                    @include tab {
+                        font-size: 27px;
+                    }
+
+                    @include mobile {
+                        font-size: 25px;
+                    }
+
+                    span {
+                        color: #FFB703;
+                    }
+                }
+                .lizingOpt-block__T-R__span{
+                    color: #858585;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 135%;
+                    letter-spacing: -0.54px;
+                }
+            }
+        }
+        .lizingOpt-block__B {
+            margin-top: 40px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+            }
+            .lizingOpt-block__B-L{
+                .lizingOpt-block__B-L__img {
+                    width: 100%;
+                    height: 500px;
+
+                    @include tab {
+                        height: 360px;
+                    }
+
+                    @include mobile {
+                        height: 250px;
+                    }
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        border-radius: 20px;
+                        height: 100%;
+                    }
+                }
+            }
+            .lizingOpt-block__B-R{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .lizingOpt-block__B-R__img {
+                    width: 100%;
+                    height: 240px;
+
+                    @include tab {
+                        height: 170px;
+                    }
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        border-radius: 20px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// minimum requirements
+
+.minReq{
+    .minReq-block {
+        font-family: "Hauora";
+        .minReq-block__T{
+
+        }
+        .minReq-block__B{
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+            margin-top: 30px;
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .minReq-block__B-L{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                    width: 100%;
+                }
+                .minReq-block__B-item {
+                    min-height: 350px;
+
+                    @include mobile {
+                        min-height: 280px;
+                    }
+                }
+            }
+            .minReq-block__B-R{
+                width: calc(50% - 10px);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                @include mobile {
+                    width: 100%;
+                }
+                .minReq-block__B-item {
+                    min-height: 165px;
+
+                    @include tab {
+                        min-height: 350px;
+
+                        &:last-child {
+                            width: 984px;
+                            position: relative;
+                            left: -502px;
+                        }
+                    }
+
+                    @include mobile {
+                        min-height: 280px;
+
+                        &:last-child {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+            .minReq-block__B-item {
+                padding: 20px;
+                border-radius: 15px;
+                background: #F9F9F6;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+            }
+
+            .minReq-block__B-item__info{
+                color: #050505;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 110%;
+                letter-spacing: -3px;
+                text-transform: uppercase;
+
+                @include tab {
+                    font-size: 55px;
+                }
+
+                @include mobile {
+                    font-size: 36px;
+                }
+            }
+            .minReq-block__B-item__B{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .minReq-block__B-item__numb{
+                color: #858585;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 135%;
+                letter-spacing: -0.33px;
+
+                @include tab {
+                    font-size: 12px;
+                }
+
+                @include mobile {
+                    font-size: 11px;
+                }
+            }
+            .minReq-block__B-item__span{
+                color: #858585;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 135%;
+                letter-spacing: -0.33px;
+
+                @include tab {
+                    font-size: 12px;
+                }
+
+                @include mobile {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+// Request conditions
+
+.reqCond{
+    .reqCond-block{
+        .reqCond-block__T {
+            .reqCond-block__T-L {
+                .reqCond-block__T-L__span {
+                    &::after {
+                        width: 75%;
+
+                        @include tab {
+                            width: 65%;
+                        }
+                    }
+                }
+            }
+            .reqCond-block__T-R {
+                .reqCond-block__T-R__info {
+                    margin-bottom: 50px;
+                }
+                .reqCond-block__T-R__form {
+                    .reqCond-block__T-R__form-block{
+                        .reqCond-block__T-R__form-block__actions {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            margin-bottom: 20px;
+
+                            @include mobile {
+                                flex-direction: column;
+                                width: 100%;
+                                margin-bottom: 40px;
+                            }
+                            .reqCond-name{
+                                width: calc(50% - 10px);
+                                border: none;
+                                border-bottom: 1px solid #E2E2E2;
+                                outline: none;
+                                color: #858585;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 135%;
+                                letter-spacing: -0.54px;
+                                padding: 5px;
+
+                                @include mobile {
+                                    width: 100%;
+                                    padding-bottom: 10px;
+                                }
+                            }
+                            .reqCond-tel{
+                                width: calc(50% - 10px);
+                                border: none;
+                                border-bottom: 1px solid #E2E2E2;
+                                outline: none;
+                                color: #858585;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 135%;
+                                letter-spacing: -0.54px;
+                                padding: 5px;
+
+                                @include mobile {
+                                    width: 100%;
+                                    padding-bottom: 10px;
+                                }
+                            }
+                        }
+                        .reqCond-btn {
+                            width: calc(50% - 10px);
+                            color: #FFF;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 135%;
+                            letter-spacing: -0.54px;
+                            border-radius: 10px;
+                            background: #050505;
+                            border: none;
+                            padding: 10px;
+
+                            @include tab {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

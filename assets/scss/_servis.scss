@@ -1,0 +1,185 @@
+
+// servis hero
+
+.servisHero {
+    .servisHero-block {
+        .deliveryHero-block__T {
+            .deliveryHero-block__T-L {
+                .aboutCompany-block__descr{
+                    width: 100%;
+                }
+            }
+            .deliveryHero-block__T-R {
+                @include tab {
+                    align-items: start !important;
+
+                    .deliveryHero-block__T-R__span {
+                        margin-top: 55px;
+                    }
+                }
+                .deliveryHero-block__T-R__link{
+                    @include tab {
+                        width: 96px !important;
+                        height: 80px !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// service info
+.servisInfo{
+    .servisInfo-block {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: "Hauora";
+        .servisInfo-block__T {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+            }
+            .servisInfo-block__T-L{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                width: 90%;
+            }
+            }
+            .servisInfo-block__T-R{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                width: 100%;
+            }
+            }
+        }
+        .servisInfo-block__B {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column-reverse;
+                width: 100%;
+            }
+            .servisInfo-block__B-L{
+                width: calc(50% - 10px);
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                gap: 20px;
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+            .servisInfo-block__B-R{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                    width: 100%;
+                }
+                .servisInfo-block__B-item {
+                    min-height: 350px;
+
+                    @include tab {
+                        min-height: 420px;
+                    }
+
+                    @include mobile {
+                        min-height: 335px;
+                    }
+                }
+            }
+            .servisInfo-block__B-item {
+                padding: 20px;
+                border-radius: 15px;
+                background: #F9F9F6;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                min-height: 165px;
+
+                @include tab {
+                    min-height: 200px;
+                }
+
+                @include mobile {
+                    min-height: 335px;
+                    padding: 20px 10px;
+                }
+
+                .servisInfo-block__B-item__title{
+                    color: #050505;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 110%;
+                    letter-spacing: -1.5px;
+
+                    @include tab {
+                        font-size: 27px;
+                        letter-spacing: -1.35px;
+                    }
+
+                    @include mobile {
+                        font-size: 25px;
+                        letter-spacing: -1.25px;
+                    }
+                }
+                .servisInfo-block__B-item__text{
+                    color: #858585;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 135%;
+                    letter-spacing: -0.54px;
+                }
+            }
+        }
+    }
+}
+
+// map
+.map{
+    .map-block {
+        .yourMap {
+            margin-top: 20px;
+            width: 1440px;
+            height: 500px;
+            position: relative;
+            left: -40px;
+
+            @include tab {
+                width: 1024px;
+                left: -20px;
+            }
+
+            @include mobile {
+                width: 375px;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

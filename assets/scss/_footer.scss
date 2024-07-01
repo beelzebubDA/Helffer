@@ -1,0 +1,129 @@
+// footer
+
+.footer {
+
+    .container {
+        padding: 0;
+    }
+
+    &-block {
+        display: flex;
+        align-items: start;
+        padding: 40px 40px 40px 40px;
+        background: #F5F5F5;
+        border-radius: 40px 40px 0px 0px;
+
+        @include tab {
+            padding: 40px 40px 35px 40px;
+        }
+
+        @include mobile {
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            flex-direction: column;
+            gap:  20px;
+
+            .col-3 {
+                width: 65%;
+            }
+        }
+    }
+
+    &-block__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &-block__item-logo {}
+
+    &-block__item-link {
+        color: #050505;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.72px;
+        margin-bottom: 10px;
+
+        @include tab {
+            color: #858585;
+            font-size: 28px;
+            letter-spacing: -0.84px;
+        }
+
+        @include mobile {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+    }
+
+    &-block__item-nav {
+
+        &.nav2 {
+
+            @include mobile {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .list2 {
+                margin-top: 5px;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+
+    &-block__item-nav__link {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 135%;
+        letter-spacing: -0.54px;
+    }
+
+    &-block__item-socMedias {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        li {
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+
+    &-block__item-socMedia {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 12px;
+
+        @include tab {
+            width: 50px;
+            height: 50px;
+        }
+
+        &:hover {
+            background-color: #E2E2E2;
+        }
+
+        img {
+            object-fit: contain;
+        }
+    }
+}

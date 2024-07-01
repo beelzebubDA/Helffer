@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда техники</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header>
+            <div class="container">
+                <nav class="header-nav d-flex justify-content-between align-items-center">
+                    <a href="#">
+                        <img class="pe-3" src="assets/images/logo.svg" alt="logo">
+                    </a>
+
+                    <ul class="header-nav__links list-unstyled">
+                        <li class="header-nav__links-logo">
+                            <div>
+                                <a href="#"><img class="logo" src="assets/images/logo.svg" alt="logo"></a>
+                                <a href="#" class="closeMenuBtn"><img src="./assets/images/x-close.svg" alt="x close"></a>
+                            </div>
+                        </li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Сервис</a></li>
+                        <li><a href="#">Лизинг</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <div class="header-nav__contacts d-flex">
+                        <a href="mailto:SVD10999@yandex.ru">
+                            <img class="mail" src="./assets/images/mailSvg.svg" alt="mail">
+                            <span>SVD10999@yandex.ru</span>
+                        </a>
+
+                        <a href="tel:+79269993950">
+                            <img class="pe-2" src="assets/images/icon-phone.svg" alt="icon-phone">
+                            <span>+7 926 999 39 50</span>
+                        </a>
+                    </div>
+                    <a href="#" class="header-nav__menu">
+                        <span>Меню</span>
+                        <img src="./assets/images/menuImg.svg" alt="menu svg">
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- about company hero / lizing hero / tradeIn hero / guarantee hero / delivery Hero -->
+            <section class="aboutCompany-hero deliveryHero rentProductHero">
+                <div class="container">
+                    <div class="aboutCompany-block deliveryHero-block rentProductHero-block">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Главная /</a></li>
+                            <li>аренда</li>
+                        </ul>
+                        <h2 class="rentProductHero-block__title">аренда техники</h2>
+                        <div class="deliveryHero-block__sides">
+                            <div class="deliveryHero-block__T">
+                                <div class="deliveryHero-block__T-L">
+                                    <span class="description aboutCompany-block__descr">Вы можете взять технику Helffer в аренду, а также подобрать к технике необходимое вам навесное оборудование</span>
+                                </div>
+                                <div class="deliveryHero-block__T-R">
+                                    <span class="deliveryHero-block__T-R__span">Оставить заявку</span>
+                                    <a class="to-catalog__btn deliveryHero-block__T-R__link" href="#">
+                                        <img src="assets/images/icon-arrow.svg" alt="icon-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="deliveryHero-block__B">
+                                <img class="aboutCompany-block__img" src="./assets/images/rentProductHeroImg.png" alt="hero img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- rent techniques -->
+            <section class="rentTech">
+                <div class="container">
+                    <div class="rentTech-block">
+                        <h2 class="title">техника в аренду</h2>
+                        <div class="rentTech-block__items">
+                            <div class="rentTech-block__item">
+                                <div class="rentTech-block__item-sides">
+                                    <div class="rentTech-block__item-L">
+                                        <a href="#" class="rentTech-block__item-L-T">
+                                            <img class="rentTech-block__item-L-T__img" src="./assets/images/rentTechImg01.png" alt="MSV 301 rent">
+                                        </a>
+                                        <a href="#" class="rentTech-block__item-L-Btn catalog-block__B-R-main__item-b__btn">Арендовать</a>
+                                    </div>
+                                    <div class="rentTech-block__item-R">
+                                        <div class="rentTech-block__item-R-T">
+                                            <div class="rentTech-block__item-R-T-T">
+                                                <span class="rentTech-block__item-R-T-T__span">Мини-думпер</span>
+                                                <span class="rentTech-block__item-R-T-T__name">MSV 301</span>
+                                            </div>
+                                            <div class="rentTech-block__item-R-T-B">
+                                                <span class="rentTech-block__item-R-T-B__span">Варианты навесного оборудования</span>
+                                                <div class="rentTech-block__item-R-T-B__imgs">
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep01MSV301.png" alt="MSV301 equepment 01">
+                                                    </a>
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep02MSV301.png" alt="MSV301 equepment 02">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rentTech-block__item-R-B">
+                                            <span class="rentTech-block__item-R-B__span">стоимость аренды</span>
+                                            <span class="rentTech-block__item-R-B__price">от<span>7 000 ₽</span>/сутки</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rentTech-block__item">
+                                <div class="rentTech-block__item-sides">
+                                    <div class="rentTech-block__item-L">
+                                        <a href="#" class="rentTech-block__item-L-T">
+                                            <img class="rentTech-block__item-L-T__img" src="./assets/images/rentTechImg02.png" alt="MSV 111 rent">
+                                        </a>
+                                        <a href="#" class="rentTech-block__item-L-Btn catalog-block__B-R-main__item-b__btn">Арендовать</a>
+                                    </div>
+                                    <div class="rentTech-block__item-R">
+                                        <div class="rentTech-block__item-R-T">
+                                            <div class="rentTech-block__item-R-T-T">
+                                                <span class="rentTech-block__item-R-T-T__span">Мини-погрузчик</span>
+                                                <span class="rentTech-block__item-R-T-T__name">MSV 111</span>
+                                            </div>
+                                            <div class="rentTech-block__item-R-T-B">
+                                                <span class="rentTech-block__item-R-T-B__span">Варианты навесного оборудования</span>
+                                                <div class="rentTech-block__item-R-T-B__imgs">
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep01MSV301.png" alt="MSV301 equepment 01">
+                                                    </a>
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep03MSV111.png" alt="MSV111 equepment 03">
+                                                    </a>
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep04MSV111.png" alt="MSV111 equepment 04">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rentTech-block__item-R-B">
+                                            <span class="rentTech-block__item-R-B__span">стоимость аренды</span>
+                                            <span class="rentTech-block__item-R-B__price">от<span>7 500 ₽</span>/сутки</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rentTech-block__item">
+                                <div class="rentTech-block__item-sides">
+                                    <div class="rentTech-block__item-L">
+                                        <a href="#" class="rentTech-block__item-L-T">
+                                            <img class="rentTech-block__item-L-T__img" src="./assets/images/rentTechImg03.png" alt="MSV 112 rent">
+                                        </a>
+                                        <a href="#" class="rentTech-block__item-L-Btn catalog-block__B-R-main__item-b__btn">Арендовать</a>
+                                    </div>
+                                    <div class="rentTech-block__item-R">
+                                        <div class="rentTech-block__item-R-T">
+                                            <div class="rentTech-block__item-R-T-T">
+                                                <span class="rentTech-block__item-R-T-T__span">Мини-погрузчик</span>
+                                                <span class="rentTech-block__item-R-T-T__name">MSV 112</span>
+                                            </div>
+                                            <div class="rentTech-block__item-R-T-B">
+                                                <span class="rentTech-block__item-R-T-B__span">Варианты навесного оборудования</span>
+                                                <div class="rentTech-block__item-R-T-B__imgs">
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep05MSV112.png" alt="MSV301 equepment 05">
+                                                    </a>
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep06MSV112.png" alt="MSV112 equepment 06">
+                                                    </a>
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep07MSV112.png" alt="MSV112 equepment 07">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rentTech-block__item-R-B">
+                                            <span class="rentTech-block__item-R-B__span">стоимость аренды</span>
+                                            <span class="rentTech-block__item-R-B__price">от<span>5 000 ₽</span>/сутки</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rentTech-block__item">
+                                <div class="rentTech-block__item-sides">
+                                    <div class="rentTech-block__item-L">
+                                        <a href="#" class="rentTech-block__item-L-T">
+                                            <img class="rentTech-block__item-L-T__img" src="./assets/images/rentTechImg04.png" alt="MSV 400 rent">
+                                        </a>
+                                        <a href="#" class="rentTech-block__item-L-Btn catalog-block__B-R-main__item-b__btn">Арендовать</a>
+                                    </div>
+                                    <div class="rentTech-block__item-R">
+                                        <div class="rentTech-block__item-R-T">
+                                            <div class="rentTech-block__item-R-T-T">
+                                                <span class="rentTech-block__item-R-T-T__span">Мини-погрузчик</span>
+                                                <span class="rentTech-block__item-R-T-T__name">MSV 400</span>
+                                            </div>
+                                            <div class="rentTech-block__item-R-T-B">
+                                                <span class="rentTech-block__item-R-T-B__span">Варианты навесного оборудования</span>
+                                                <div class="rentTech-block__item-R-T-B__imgs">
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep08MSV400.png" alt="MSV400 equepment 08">
+                                                    </a>
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep09MSV400.png" alt="MSV400 equepment 09">
+                                                    </a>
+                                                    <a href="#" class="rentTech-block__item-R-T-B__imgs-link">
+                                                        <img src="./assets/images/rentEquep10MSV400.png" alt="MSV400 equepment 10">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rentTech-block__item-R-B">
+                                            <span class="rentTech-block__item-R-B__span">стоимость аренды</span>
+                                            <span class="rentTech-block__item-R-B__price">от<span>5 000 ₽</span>/сутки</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Request conditions / delivery request -->
+            <section class="lizingOpt reqCond delRequest">
+                <div class="container">
+                    <div class="lizingOpt-block reqCond-block delRequest-block">
+                        <div class="lizingOpt-block__T reqCond-block__T delRequest-block__T">
+                            <div class="lizingOpt-block__T-L reqCond-block__T-L delRequest-block__T-L">
+                                <span class="lizingOpt-block__T-L__span reqCond-block__T-L__span delRequest-block__T-L__span">Заявка на доставку</span>
+                            </div>
+                            <div class="lizingOpt-block__T-R reqCond-block__T-R delRequest-block__T-R">
+                                <h2 class="lizingOpt-block__T-R__info reqCond-block__T-R__info delRequest-block__T-R__info">РАССЧИТАТЬ СТОИМОСТЬ И УТОЧНИТЬ ВРЕМЯ ДОСТАВКИ ВЫ СМОЖЕТЕ, СВЯЗАВШИСЬ С НАШИМИ СПЕЦИАЛИСТАМИ.</h2>
+                                <form action="post" class="reqCond-block__T-R__form delRequest-block__T-R__form">
+                                    <div class="reqCond-block__T-R__form-block delRequest-block__T-R__form-block">
+                                        <div class="reqCond-block__T-R__form-block__actions">
+                                            <input class="reqCond-name" name="reqCondName" type="text" placeholder="Ваше имя">
+                                            <input class="reqCond-tel" name="reqCondTel" type="text" placeholder="Ваш номер телефона">
+                                        </div>
+                                        <input class="delRequest-address" name="reqCondAddress" type="text" placeholder="Адрес доставки">
+                                        <button class="reqCond-btn">Оставить заявку</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACTS -->
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts-block">
+                        <h3 class="title">КОНТАКТЫ</h3>
+                        <div class="contacts-block__items">
+                            <div class="contacts-item adress col-3">
+                                <span class="contacts-item__title">АДРЕС</span>
+                                <div class="contacts-item__info">
+                                    <span class="contacts-item__info-adress">Санкт-Петербург ул. Беринга 8 оф.45</span>
+                                    <a href="mailto:SVD10999@yanbex.ru" class="contacts-item__info-link">SVD10999@yandex.ru</a>
+                                </div>
+                            </div>
+                            <div class="contacts-item telMail col-6">
+                                <span class="contacts-item__title">ТЕЛЕФОН/ПОЧТА</span>
+                                <div class="contacts-item__info">
+                                    <a href="tel:+79269993950" class="contacts-item__info-tel">+7 926 999 39 50</a>
+                                    <a href="mailto:SVD10999@yanbex.ru" class="contacts-item__info-link">SVD10999@yandex.ru</a>
+                                </div>
+                            </div>
+                            <div class="contacts-item props col-3">
+                                <span class="contacts-item__title">РЕКВИЗИТЫ</span>
+                                <div class="contacts-item__info">
+                                    <span class="contacts-item__info-span">ООО “СИБТЕХНИКС</span>
+                                    <span class="contacts-item__info-span">ИНН: 5404314139</span>
+                                    <span class="contacts-item__info-span">ОГРН: 1225400043384</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="backgroundBlack"></div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-block">
+                    <div class="col-3 footer-block__item">
+                        <a href="#" class="footer-block__item-logo">
+                            <img src="./assets/images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-3 footer-block__item">
+                        <a href="#" class="footer-block__item-link">Меню</a>
+                        <nav class="footer-block__item-nav nav2">
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Сервис</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Лизинг</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Контакты</a>
+                                </li>
+                            </ul>
+                            <ul class="list2">
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Трейд-ин</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Гарантия</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Запчасти</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Аренда</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-3 footer-block__item">
+                        <a href="#" class="footer-block__item-link">Каталог</a>
+                        <nav class="footer-block__item-nav">
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Мини-погрузчики</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Мини-экскаваторы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Мини-думпер</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Траншеекопатель</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Навесное оборудование</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Аренда техники</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-3 footer-block__item">
+                        <a href="#" class="footer-block__item-link">Мы в социальных сетях</a>
+                        <nav class="footer-block__item-socMedias">
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-block__item-socMedia">
+                                        <img src="./assets/images/YouTubemini.png" alt="Youtube">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-socMedia">
+                                        <img src="./assets/images/vkmini.svg" alt="Vk">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-socMedia">
+                                        <img src="./assets/images/whatsappmini.svg" alt="WhatsApp">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-socMedia">
+                                        <img src="./assets/images/telegrammini.svg" alt="Telegram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="catalog-modal">
+            <div class="catalog-modal__block">
+                <h2 class="catalog-modal__title">ЗАЯВКА НА АРЕНДУ <br> MSV 111</h2>
+                <form action="post" class="catalog-modal__form">
+                    <div class="catalog-modal__actions">
+                        <input type="text" class="catalog-modal__form-name" placeholder="Ваше имя">
+                        <input type="text" class="catalog-modal__form-number"
+                            placeholder="Ваш телефон">
+                    </div>
+                    <div class="catalog-modal__info">
+                        <div class="catalog-modal__info-L">
+                            <div class="catalog-modal__info-item">
+                                <span class="catalog-modal__info-item__span">Товар</span>
+                                <span class="catalog-modal__info-item__info">Мини-погрузчик MSV 111</span>
+                            </div>
+                            <div class="catalog-modal__info-item">
+                                <span class="catalog-modal__info-item__span">Контакты</span>
+                                <span class="catalog-modal__info-item__info">+7 926 999 39 50</span>
+                            </div>
+                        </div>
+                        <div class="catalog-modal__info-R">
+                            <div class="catalog-modal__info-item">
+                                <span class="catalog-modal__info-item__span">Итоговая стоимость</span>
+                                <span class="catalog-modal__info-item__info">от 7000р./сутки</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="catalog-modal__btn">Оставить заявку</button>
+                    <span class="catalog-modal__confidens">нажимая оставить заявку вы соглашаетесь с политикой <br>
+                        конфиденциальности</span>
+                    <a href="#" class="catalog-modal__closeBtn"><img src="./assets/images/x-close.svg"
+                            alt="x close"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/jquery.inputmask.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

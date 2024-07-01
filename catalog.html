@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <header>
+            <div class="container">
+                <nav class="header-nav d-flex justify-content-between align-items-center">
+                    <a href="#">
+                        <img class="pe-3" src="assets/images/logo.svg" alt="logo">
+                    </a>
+
+                    <ul class="header-nav__links list-unstyled">
+                        <li class="header-nav__links-logo">
+                            <div>
+                                <a href="#"><img class="logo" src="assets/images/logo.svg" alt="logo"></a>
+                                <a href="#" class="closeMenuBtn"><img src="./assets/images/x-close.svg" alt="x close"></a>
+                            </div>
+                        </li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Сервис</a></li>
+                        <li><a href="#">Лизинг</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <div class="header-nav__contacts d-flex">
+                        <a href="mailto:SVD10999@yandex.ru">
+                            <img class="mail" src="./assets/images/mailSvg.svg" alt="mail">
+                            <span>SVD10999@yandex.ru</span>
+                        </a>
+
+                        <a href="tel:+79269993950">
+                            <img class="pe-2" src="assets/images/icon-phone.svg" alt="icon-phone">
+                            <span>+7 926 999 39 50</span>
+                        </a>
+                    </div>
+                    <a href="#" class="header-nav__menu">
+                        <span>Меню</span>
+                        <img src="./assets/images/menuImg.svg" alt="menu svg">
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <!-- MAIN -->
+        <main>
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog-block">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Главная /</a></li>
+                            <li>каталог</li>
+                        </ul>
+                        <div class="catalog-block__top">
+                            <h2 class="catalog-title">Каталог <br> продукции</h2>
+                        </div>
+                        <div class="catalog-block__bottom">
+                            <div class="catalog-block__B-L">
+                                <div class="faq-block catalog-block__B-L__block">
+                                    <form action="post">
+                                        <div class="faq-block__accordion catalog-block__B-L__accordion">
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item filterClose">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">
+                                                    Фильтры
+                                                    <img class="closeX" src="./assets/images/x-close.svg" alt="close X">
+                                                </span>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">СПЕЦТЕХНИКА
+                                                    HELFFER <span class="plus"><img class="minus2"
+                                                            src="./assets/images/minusAccordion.svg" alt=""><img
+                                                            src="./assets/images/minusAccordion.svg"
+                                                            alt=""></span></span>
+                                                <div class="catalog-block__B-L__accordion-content">
+                                                    <label>
+                                                        <input type="checkbox" name="miniDumper">
+                                                        <span>Мини-Думпер</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="miniPogr">
+                                                        <span>Мини-погрузчики</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="miniTr">
+                                                        <span>Мини-траншеекопатель</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="miniX">
+                                                        <span>Мини-экскаваторы</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="miniNav">
+                                                        <span>Навесное оборудование</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">ХОД
+                                                    <span class="plus"><img class="minus2"
+                                                            src="./assets/images/minusAccordion.svg" alt=""><img
+                                                            src="./assets/images/minusAccordion.svg"
+                                                            alt=""></span></span>
+                                                <div class="catalog-block__B-L__accordion-content">
+                                                    <label>
+                                                        <input type="checkbox" name="gusen">
+                                                        <span>Гусеничный</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="koles">
+                                                        <span>Колесный</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">НАВЕСНОЕ
+                                                    ОБОРУДОВАНИЕ<span class="plus"><img class="minus2"
+                                                            src="./assets/images/minusAccordion.svg" alt=""><img
+                                                            src="./assets/images/minusAccordion.svg"
+                                                            alt=""></span></span>
+                                                <div class="catalog-block__B-L__accordion-content">
+                                                    <label>
+                                                        <input type="checkbox" name="betonS">
+                                                        <span>Бетоносмеситель</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="bighand">
+                                                        <span>Большой палец</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="bordurUkl">
+                                                        <span>Бордюроукладчик</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="vibroTramb">
+                                                        <span>Вибротрамбвощик</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="vils">
+                                                        <span>Вилы</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="gazonokos">
+                                                        <span>Газонокосилки</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="gidravZaj">
+                                                        <span>Гидравлический зажим</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="gidroVrash">
+                                                        <span>Гидровращатели</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="godromolot">
+                                                        <span>Гидромолот</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="kirkovshik">
+                                                        <span>Кирковщик</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="kovshi">
+                                                        <span>Ковши</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="korchevatel">
+                                                        <span>Корчеватель</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="kuzovSamosval">
+                                                        <span>Кузов самосвальный</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="kultivator">
+                                                        <span>Культиватор</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="otvals">
+                                                        <span>Отвалы</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="peskoRazbr">
+                                                        <span>Пескоразбрасыватель</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="pikaSena">
+                                                        <span>Пика для сена</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="planirov">
+                                                        <span>Планировщик</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="prisep">
+                                                        <span>Прицеп</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="snegoUbor">
+                                                        <span>Снегоуборщик</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="strelaMSV301">
+                                                        <span>Стрела для MSV 301</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="strelaKruk">
+                                                        <span>Стрела с крюком</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="transheekop">
+                                                        <span>Траншеекопатель</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="shetki">
+                                                        <span>Щетки</span>
+                                                    </label>
+                                                    <label class="moreItems">
+                                                        <input type="checkbox" name="xkovator">
+                                                        <span>Экскаватор</span>
+                                                    </label>
+                                                    <a href="#" class="showMoreItems-btn"><span
+                                                            class="btn-text01">Показать все</span><span
+                                                            class="btn-text02">Скрыть</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">СОВМЕСТИМОСТЬ
+                                                    ОБОРУДОВАНИЯ <span class="plus"><img class="minus2"
+                                                            src="./assets/images/minusAccordion.svg" alt=""><img
+                                                            src="./assets/images/minusAccordion.svg"
+                                                            alt=""></span></span>
+                                                <div class="catalog-block__B-L__accordion-content">
+                                                    <label>
+                                                        <input type="checkbox" name="MSV101">
+                                                        <span>Helffer MSV 101</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MSV102">
+                                                        <span>Helffer MSV 102</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MSV111">
+                                                        <span>Helffer MSV 111</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MSV112">
+                                                        <span>Helffer MSV 112</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MSV200">
+                                                        <span>Helffer MSV 200</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MSV301">
+                                                        <span>Helffer MSV 301</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MSV302">
+                                                        <span>Helffer MSV 302</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MSV400">
+                                                        <span>Helffer MSV 400</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MSV450">
+                                                        <span>Helffer MSV 450</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">НАЗНАЧЕНИЕ
+                                                    <span class="plus"><img class="minus2"
+                                                            src="./assets/images/minusAccordion.svg" alt=""><img
+                                                            src="./assets/images/minusAccordion.svg"
+                                                            alt=""></span></span>
+                                                <div class="catalog-block__B-L__accordion-content">
+                                                    <label>
+                                                        <input type="checkbox" name="forminiDumper">
+                                                        <span>Для мини-думперов</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="forminiPogruz">
+                                                        <span>Для мини-погрузчиков</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="forminiXkovator">
+                                                        <span>Для мини-экскаватаров</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">БРЕНД
+                                                    <span class="plus"><img class="minus2"
+                                                            src="./assets/images/minusAccordion.svg" alt=""><img
+                                                            src="./assets/images/minusAccordion.svg"
+                                                            alt=""></span></span>
+                                                <div class="catalog-block__B-L__accordion-content">
+                                                    <label>
+                                                        <input type="checkbox" name="Helffer">
+                                                        <span>Helffer</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="Avant">
+                                                        <span>Avant</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="Bobcat">
+                                                        <span>Bobcat</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="Delta">
+                                                        <span>Delta</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="Locust">
+                                                        <span>Locust</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MultiOne">
+                                                        <span>MultiOne</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="Mustang">
+                                                        <span>Mustang</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MKMS">
+                                                        <span>МКСМ</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="MTZ">
+                                                        <span>МТЗ</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="another">
+                                                        <span>Другой</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">ОТРАСЛЬ
+                                                    <span class="plus"><img class="minus2"
+                                                            src="./assets/images/minusAccordion.svg" alt=""><img
+                                                            src="./assets/images/minusAccordion.svg"
+                                                            alt=""></span></span>
+                                                <div class="catalog-block__B-L__accordion-content">
+                                                    <label>
+                                                        <input type="checkbox" name="forgornodobPromish">
+                                                        <span>Для горнодобывающей промышленности</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="forKommunalWorks">
+                                                        <span>Для коммунальных работ</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="forLandscapeWorks">
+                                                        <span>Для ландшафтных работ</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="forPredp">
+                                                        <span>Для предприятий</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="forStroitelWorks">
+                                                        <span>Для строительных работ</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="forFarmsWorks">
+                                                        <span>Для фермерского хозяйства</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span
+                                                    class="faq-block__acc-item__title catalog-block__B-L__accordion-title">ДОП.
+                                                    ОБОРУДОВАНИЕ <span class="plus"><img class="minus2"
+                                                            src="./assets/images/minusAccordion.svg" alt=""><img
+                                                            src="./assets/images/minusAccordion.svg"
+                                                            alt=""></span></span>
+                                                <div class="catalog-block__B-L__accordion-content">
+                                                    <label>
+                                                        <input type="checkbox" name="bistrosyomUstr">
+                                                        <span>Быстросъемное устройство</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="kolesKomplects">
+                                                        <span>Комплекты колес</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="naborforTO">
+                                                        <span>Наборы для ТО</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="platformSamohod">
+                                                        <span>Платформа самоходная</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="sidenyaOperator">
+                                                        <span>Сиденье оператора</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="chehol">
+                                                        <span>Чехол</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="faq-block__acc-item catalog-block__B-L__accordion-item">
+                                                <span class="catalog-block__B-L__accordion-title">ЦЕНА</span>
+                                                <div class="catalog-block__B-L__accordion-content price">
+                                                    <div class="catalog-block-B-L__price-block">
+                                                        <span>ОТ</span>
+                                                        <input type="text" class="price-block-min" value="7000">
+                                                    </div>
+                                                    <div class="catalog-block-B-L__price-block">
+                                                        <span>ДО</span>
+                                                        <input type="text" class="price-block-max" value="1899000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="catalog-block__B-R">
+                                <div class="catalog-block__B-R-block">
+                                    <div class="catalog-block__B-R-top">
+                                        <form action="post" class="catalog-block__form">
+                                            <div class="catalog-block__B-R-top__block">
+                                                <input type="text" class="catalog-block__search" value="Поиск"
+                                                    placeholder="Поиск">
+                                                <a href="#" class="catalog-block__search-btn">
+                                                    <img src="./assets/images/search-lg.svg" alt="search">
+                                                </a>
+                                                <select name="catalog-select" class="catalog-select">
+                                                    <option value="1" data-display="Сортировка">По умолчанию</option>
+                                                    <option value="2">Цена: по возрастанию</option>
+                                                    <option value="3">Цена: по убыванию</option>
+                                                    <option value="4">А-Я</option>
+                                                    <option value="5">Я-А</option>
+                                                    <option value="6">Сначала новые</option>
+                                                    <option value="7">Сначала старые</option>
+                                                </select>
+                                                <a href="#" class="catalog-mob__List">
+                                                    <img src="./assets/images/catalogList.svg" alt="catalog list">
+                                                </a>
+                                                <a href="#" class="catalog-mob__select">
+                                                    <img src="./assets/images/filter-lines.svg" alt="filter list">
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="catalog-block__B-R-main">
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item more-item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item more-item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-block__B-R-main__item more-item">
+                                            <div class="catalog-block__B-R-main__item-t">
+                                                <img src="./assets/images/msv111origin.png" alt="msv111">
+                                            </div>
+                                            <div class="catalog-block__B-R-main__item-b">
+                                                <div class="catalog-block__B-R-main__item-b__namePrice">
+                                                    <span class="catalog-block__B-R-main__item-b__name">Мини-погрузчик
+                                                        <br> MSV 11</span>
+                                                    <span class="catalog-block__B-R-main__item-b__price">1 159 000
+                                                        р.</span>
+                                                </div>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__moreInfo">Подробнее
+                                                    о товаре</a>
+                                                <a href="#" class="catalog-block__B-R-main__item-b__btn">Оставить
+                                                    заявку</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="catalog-showMore__item-btn">загрузить еще</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACTS -->
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts-block">
+                        <h3 class="title">КОНТАКТЫ</h3>
+                        <div class="contacts-block__items">
+                            <div class="contacts-item adress col-3">
+                                <span class="contacts-item__title">АДРЕС</span>
+                                <div class="contacts-item__info">
+                                    <span class="contacts-item__info-adress">Санкт-Петербург ул. Беринга 8 оф.45</span>
+                                    <a href="mailto:SVD10999@yanbex.ru"
+                                        class="contacts-item__info-link">SVD10999@yandex.ru</a>
+                                </div>
+                            </div>
+                            <div class="contacts-item telMail col-6">
+                                <span class="contacts-item__title">ТЕЛЕФОН/ПОЧТА</span>
+                                <div class="contacts-item__info">
+                                    <a href="tel:+79269993950" class="contacts-item__info-tel">+7 926 999 39 50</a>
+                                    <a href="mailto:SVD10999@yanbex.ru"
+                                        class="contacts-item__info-link">SVD10999@yandex.ru</a>
+                                </div>
+                            </div>
+                            <div class="contacts-item props col-3">
+                                <span class="contacts-item__title">РЕКВИЗИТЫ</span>
+                                <div class="contacts-item__info">
+                                    <span class="contacts-item__info-span">ООО “СИБТЕХНИКС</span>
+                                    <span class="contacts-item__info-span">ИНН: 5404314139</span>
+                                    <span class="contacts-item__info-span">ОГРН: 1225400043384</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-block">
+                    <div class="col-3 footer-block__item">
+                        <a href="#" class="footer-block__item-logo">
+                            <img src="./assets/images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-3 footer-block__item">
+                        <a href="#" class="footer-block__item-link">Меню</a>
+                        <nav class="footer-block__item-nav nav2">
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Сервис</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Лизинг</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Контакты</a>
+                                </li>
+                            </ul>
+                            <ul class="list2">
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Трейд-ин</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Гарантия</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Запчасти</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Аренда</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-3 footer-block__item">
+                        <a href="#" class="footer-block__item-link">Каталог</a>
+                        <nav class="footer-block__item-nav">
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Мини-погрузчики</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Мини-экскаваторы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Мини-думпер</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Траншеекопатель</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Навесное оборудование</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-nav__link">Аренда техники</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-3 footer-block__item">
+                        <a href="#" class="footer-block__item-link">Мы в социальных сетях</a>
+                        <nav class="footer-block__item-socMedias">
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-block__item-socMedia">
+                                        <img src="./assets/images/YouTubemini.png" alt="Youtube">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-socMedia">
+                                        <img src="./assets/images/vkmini.svg" alt="Vk">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-socMedia">
+                                        <img src="./assets/images/whatsappmini.svg" alt="WhatsApp">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-block__item-socMedia">
+                                        <img src="./assets/images/telegrammini.svg" alt="Telegram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="backgroundBlack"></div>
+
+        <div class="catalog-modal">
+            <div class="catalog-modal__block">
+                <h2 class="catalog-modal__title">ЗАЯВКА НА ПОКУПКУ <br> MSV 111</h2>
+                <form action="post" class="catalog-modal__form">
+                    <div class="catalog-modal__actions">
+                        <input type="text" class="catalog-modal__form-name" placeholder="Ваше имя">
+                        <input type="text" class="catalog-modal__form-number" value="Ваш телефон"
+                            placeholder="Ваш телефон">
+                    </div>
+                    <div class="catalog-modal__info">
+                        <div class="catalog-modal__info-L">
+                            <div class="catalog-modal__info-item">
+                                <span class="catalog-modal__info-item__span">Товар</span>
+                                <span class="catalog-modal__info-item__info">Мини-погрузчик MSV 111</span>
+                            </div>
+                            <div class="catalog-modal__info-item">
+                                <span class="catalog-modal__info-item__span">Контакты</span>
+                                <span class="catalog-modal__info-item__info">+7 926 999 39 50</span>
+                            </div>
+                        </div>
+                        <div class="catalog-modal__info-R">
+                            <div class="catalog-modal__info-item">
+                                <span class="catalog-modal__info-item__span">Итоговая стоимость</span>
+                                <span class="catalog-modal__info-item__info">1 159 000 р.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="catalog-modal__btn">Оставить заявку</button>
+                    <span class="catalog-modal__confidens">нажимая оставить заявку вы соглашаетесь с политикой <br>
+                        конфиденциальности</span>
+                    <a href="#" class="catalog-modal__closeBtn"><img src="./assets/images/x-close.svg"
+                            alt="x close"></a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/jquery.inputmask.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

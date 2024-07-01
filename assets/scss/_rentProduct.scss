@@ -1,0 +1,314 @@
+// rent product hero
+.rentProductHero{
+    .rentProductHero-block {
+        font-family: "Hauora";
+        .rentProductHero-block__title {
+            color: #050505;
+            font-size: 140px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: -7px;
+            text-transform: uppercase;
+            margin-top: 10px;
+
+            @include tab {
+                font-size: 110px;
+                letter-spacing: -5.5px;
+            }
+
+            @include mobile {
+                font-size: 48px;
+                letter-spacing: -2.4px;
+            }
+        }
+        .deliveryHero-block__sides {
+            .deliveryHero-block__T {
+                .deliveryHero-block__T-L {
+                    .description {
+                        display: block;
+                        margin-top: 20px;
+
+                        @include tab {
+                            width: 100%;
+                        }
+                    }
+                }
+                .deliveryHero-block__T-R{
+                    .deliveryHero-block__T-R__link{
+                        @include tab {
+                            width: 96px;
+                            height: 80px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// rent techniques
+.rentTech{
+    .rentTech-block{
+        font-family: "Hauora";
+
+        .title {
+            @include tab {
+                width: 48%;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .rentTech-block__items{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            .rentTech-block__item {
+                .rentTech-block__item-sides{
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    gap: 20px;
+                    width: 100%;
+
+                    @include mobile {
+                        flex-direction: column-reverse;
+                    }
+                    .rentTech-block__item-L {
+                        width: calc(75% - 10px);
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        @include mobile {
+                            width: 100%;
+                            gap: 30px;
+                        }
+                        .rentTech-block__item-L-T {
+                            min-height: 500px;
+                            border-radius: 15px;
+                            background: #F9F9F6;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            @include mobile {
+                                min-height: 250px;
+                                height: 250px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                            .rentTech-block__item-L-T__img{
+
+                            }
+                        }
+                        .rentTech-block__item-L-Btn{
+                            color: #FFF;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 135%;
+                            letter-spacing: -0.54px;
+                            padding: 23px;
+                            border-radius: 15px;
+                            background: #050505;
+                            text-align: center;
+
+                            @include mobile {
+                                padding: 10px;
+                            }
+                        }
+                    }
+                    .rentTech-block__item-R {
+                        width: calc(25% - 10px);
+                        border-radius: 15px;
+                        background: #F9F9F6;
+                        min-height: 500px;
+                        padding: 20px;
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        @include mobile {
+                            width: 100%;
+                            min-height: 210px;
+                            padding: 20px 10px;
+                            gap: 20px;
+                        }
+
+                        .rentTech-block__item-R-T {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px;
+
+                            @include mobile {
+                                flex-direction: row;
+                                gap: 10px;
+                            }
+                            .rentTech-block__item-R-T-T {
+                                display: flex;
+                                flex-direction: column;
+
+                                .rentTech-block__item-R-T-T__span{
+                                    color: #858585;
+                                    font-size: 11px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 135%;
+                                    letter-spacing: -0.33px;
+
+                                    @include tab {
+                                        font-size: 12px;
+                                        letter-spacing: -0.36px;
+                                    }
+                                }
+                                .rentTech-block__item-R-T-T__name{
+                                    color:#050505;
+                                    font-size: 30px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 110%;
+                                    letter-spacing: -1.5px;
+
+                                    @include tab {
+                                        font-size: 27px;
+                                        letter-spacing: -1.35px;
+                                    }
+
+                                    @include mobile {
+                                        font-size: 25px;
+                                        letter-spacing: -1.25px;
+                                    }
+                                }
+                            }
+                            .rentTech-block__item-R-T-B {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                .rentTech-block__item-R-T-B__span{
+                                    color: #858585;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 135%;
+                                    letter-spacing: -0.54px;
+
+                                    @include mobile {
+                                        font-size: 12px;
+                                        letter-spacing: -0.36px;
+                                    }
+                                }
+                                .rentTech-block__item-R-T-B__imgs {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 10px 25px;
+
+                                    @include tab {
+                                        gap: 10px;
+                                    }
+                                    .rentTech-block__item-R-T-B__imgs-link{
+                                        width: 45%;
+                                        min-height: 100px;
+                                        border-radius: 8px;
+                                        border: 1.3px solid #E2E2E2;
+                                        background: #FFF;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        @include tab {
+                                            width: 43%;
+                                            min-height: 80px;
+                                            height: 80px;
+                                            overflow: hidden;
+
+                                            img {
+                                                width: 70%;
+                                                object-fit: cover;
+                                            }
+                                        }
+
+                                        @include mobile {
+                                            width: 35%;
+                                            min-height: 60px;
+                                            height: 60px;
+
+                                            img {
+                                                width: 60%;
+                                            }
+                                        }
+                                        img {
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rentTech-block__item-R-B {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            width: 100%;
+                            padding: 10px;
+                            border-radius: 10px;
+                            background: #FFF;
+                            .rentTech-block__item-R-B__span{
+                                color: #858585;
+                                font-size: 11px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 135%;
+                                letter-spacing: -0.33px;
+                            }
+                            .rentTech-block__item-R-B__price{
+                                color: #858585;
+                                font-size: 11px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 135%;
+                                letter-spacing: -0.33px;
+
+                                span {
+                                    color: #050505;
+                                    font-size: 30px;
+                                    line-height: 110%;
+                                    letter-spacing: -1.5px;
+                                }
+
+                                @include tab {
+                                    font-size: 12px;
+                                    letter-spacing: -0.36px;
+
+                                    span {
+                                        font-size: 27px !important;
+                                        letter-spacing: -1.35px !important;
+                                    }
+                                }
+
+                                @include mobile {
+                                    span {
+                                        font-size: 25px !important;
+                                        letter-spacing: -1.25px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+header {
+    padding-top: 16px;
+    margin-bottom: 86px;
+
+    .header-nav {
+        line-height: 135%;
+        letter-spacing: -0.54px;
+
+        &__links {
+            display: flex;
+            gap: 0 30px;
+            padding: 12px 294px 12px 20px;
+            border-radius: 10px;
+            border: 1px solid #E2E2E2;
+
+            .header-nav__links-logo {
+                display: none;
+            }
+
+            @include tab {
+                display: none;
+
+                .header-nav__links-logo {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 30px;
+
+                    div {
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-between;
+
+                        a {
+                            .logo {
+                                width: 60px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+
+                &.actived {
+                    display: flex;
+                    position: absolute;
+                    left: auto;
+                    right: 0;
+                    width: 25%;
+                    height: 100%;
+                    flex-direction: column;
+                    padding: 20px 20px 20px 10px;
+                    top: 4px;
+                    border: none;
+                    background: white;
+                    z-index: 10;
+                    border-radius: 0%;
+                    gap: 10px;
+
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    
+        &__contacts {
+            gap: 0 20px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: 1px solid #E2E2E2;
+
+            .mail {
+                display: none;
+            }
+
+            @include tab {
+                margin-left: 200px;
+            }
+
+            @include mobile {
+                margin-left: 0px;
+                padding: 6px 20px;
+
+                span {
+                    display: none;
+                }
+
+                .mail {
+                    display: block;
+                }
+
+                .pe-2 {
+                    padding-right: 0 !important;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .header-nav__menu {
+        display: none;
+        padding: 4px 20px;
+        border-radius: 10px;
+        border: 1px solid #E2E2E2;
+        align-items: center;
+        justify-content: space-between;
+        width: 24%;
+
+        @include tab {
+            display: flex;
+        }
+
+        @include mobile {
+            padding: 4px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+                display: none;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.backgroundBlack {
+    display: none;
+    &.actived {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 5;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+}

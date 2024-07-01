@@ -1,0 +1,173 @@
+.sparesInfo{
+    .sparesInfo-block{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: "Hauora";
+        .sparesInfo-block__T {
+            display: flex;
+            align-items: start;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+            }
+            .sparesInfo-block__T-L{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                    width: 100%;
+
+                    .title {
+                        display: block;
+                        width: 80%;
+                    }
+                }
+
+                .title {
+                    span {
+                        color: #FFB703;
+                    }
+                }
+            }
+            .sparesInfo-block__T-R{
+                width: calc(50% - 10px);
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+        }
+        .sparesInfo-block__B {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @include mobile {
+                width: 100%;
+            }
+            .sparesInfo-block__B-T{
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                gap: 20px;
+                width: calc(50% - 10px);
+
+                @include mobile {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                .sparesInfo-block__B-item {
+                    width: 50%;
+                    min-height: 325px;
+                }
+            }
+            .sparesInfo-block__B-B{
+                display: flex;
+                align-items: end;
+                justify-content: end;
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                .sparesInfo-block__B-item {
+                    width: calc(50% - 10px);
+                    min-height: 325px;
+
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+            }
+            
+            .sparesInfo-block__B-item {
+                padding: 20px;
+                border-radius: 15px;
+                background: #F9F9F6;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                position: relative;
+                overflow: hidden;
+
+                @include mobile {
+                    width: 100% !important;
+                }
+
+                .sparesInfo-block__B-item__T{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                .sparesInfo-block__B-item-title{
+                    color: #000;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 110%;
+                    letter-spacing: -1.5px;
+
+                    @include tab {
+                        font-size: 27px;
+                        letter-spacing: -1.35px;
+                    }
+
+                    @include mobile {
+                        font-size: 25px;
+                        letter-spacing: -1.25px;
+                    }
+                }
+                .sparesInfo-block__B-item-span{
+                    color: #858585;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 135%;
+                    letter-spacing: -0.54px;
+                }
+                .sparesInfo-block__B-item__link{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 50px;
+                    max-height: 50px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    position: relative;
+                    z-index: 2;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .sparesInfo-block__B-item__img {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    object-fit: cover;
+
+                    @include tab {
+                        width: 50%;
+
+                        &.frst {
+                            width: 100%;
+                        }
+
+                        &.scnd {
+                            width: 60%;
+                        }
+                    }
+
+                    @include mobile {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
